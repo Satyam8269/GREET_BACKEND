@@ -4,10 +4,10 @@ const greetingHandler = async (req, res) => {
     const name = req.query.name;
     try {
         if(!name) {
-            return res.status(400).json({error: "Name is required"});
+            return res.status(400).json({error: "Name is required!!🤯"});
         }
 
-        const message = `Hello, ${name}! Welcome to Younglabs.`;
+        const message = `Hello, ${name}! Welcome to Younglabs!!😊`;
 
         const newUser = new User({name, message});
         const savedUser = await newUser.save();
